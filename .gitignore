@@ -1,0 +1,59 @@
+# No ROM, and nothing extracted from one, belongs in this repo. Ever.
+*.nes
+*.gb
+*.gbc
+*.sfc
+*.smc
+*.md
+*.gba
+*.z64
+*.n64
+*.v64
+*.iso
+*.gcm
+*.rvz
+*.sav
+*.srm
+*.sa1
+*.sa2
+*.ss0
+baserom*
+
+# ...but this project's own Markdown is not a Genesis ROM.
+!STATUS.md
+!README.md
+!notes/*.md
+
+# Upstream checkouts and third-party source trees: cloned by the build, not vendored.
+upstream/
+ref/
+
+# Build output
+web/dist/
+web/test/core-node.js
+web/test/core-node.wasm
+web/test/core-dbg.*
+build/
+*.o
+*.a
+*.elf
+*.map
+*.sym
+
+# Extracted assets and emulator artifacts, in case anything ever lands here
+assets/
+extracted/
+graphics/
+sound/
+*.4bpp
+*.8bpp
+*.gbapal
+*.lz
+*.bin
+*.wav
+*.mid
+
+# Screenshots from test runs can contain game frames
+shots/
+frames/
+*.ppm
